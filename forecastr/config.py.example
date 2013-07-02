@@ -1,0 +1,19 @@
+class Config(object):
+    DEBUG = False
+    TESTING = False
+    SQLALCHEMY_ECHO = False
+    SQLALCHEMY_DATABASE_URI = 'sqlite://:memory:'
+    BROKER_URL = 'redis://localhost:6379/0'
+    CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+
+class ProductionConfig(Config):
+    # Change to your REAL Production DB connection string
+    SQLALCHEMY_DATABASE_URI = ''
+
+class DevelopmentConfig(Config):
+    DEBUG = True
+    # Change to your DEV DB connection string
+    SQLALCHEMY_DATABASE_URI = ''
+
+class TestingConfig(Config):
+    TESTING = True

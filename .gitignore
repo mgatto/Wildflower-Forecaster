@@ -1,0 +1,66 @@
+## Commong ignore patterns for Eclipse
+*.pydevproject
+.project
+.metadata
+# bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+### Python
+*.py[cod]
+*.swp
+*.egg-info/
+*~
+
+#Ignore virtualenv
+env/
+
+logs/
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+## common ignore patterns for Vim
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+
+
+## ignore patterns for devs on Windows
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+
+## ignore patterns for devs on OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+/config.py
